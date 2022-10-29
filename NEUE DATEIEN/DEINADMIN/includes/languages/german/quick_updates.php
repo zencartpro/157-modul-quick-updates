@@ -1,7 +1,7 @@
 <?php
 define('WARNING_MESSAGE','Übernehmen Sie Ihre Änderungen durch einen Klick auf "Aktualisieren" BEVOR Sie die aktuelle Anzeige verändern (Sortierung, Seitenwechsel, neue Filtereinstellungen ...)');
 define('HEADING_TITLE', 'Quick Updates');
-define('QU_HEADING_TEXT','<strong class="quWarning">HINWEIS: Wählen Sie zunächst eine Kategorie aus dem Kategoriefilter, um sich die darin enthaltenen Artikel anzeigen zu lassen.<br/>Bevor Sie Massenänderungen mit Quickupates vornehmen machen Sie immer zuerst eine Datenbanksicherung!</strong>');
+define('QU_HEADING_TEXT','<strong>HINWEIS: Wählen Sie zunächst eine Kategorie aus dem Kategoriefilter, um sich die darin enthaltenen Artikel anzeigen zu lassen.<br/>Bevor Sie Massenänderungen mit Quickupdates vornehmen, machen Sie immer zuerst eine Datenbanksicherung!</strong>');
 
 define('TEXT_PRODUCTS_UPDATED', 'Artikel aktualisiert!');
 define('TEXT_CATEGORY_WITH_CHILDS', 'Diese Kategorie hat Unterkategorien! ');

@@ -61,6 +61,6 @@ FROM ".TABLE_CONFIGURATION_GROUP."
 WHERE configuration_group_title= 'Quick Updates'
 LIMIT 1;");
 $db->Execute("INSERT IGNORE INTO " . TABLE_ADMIN_PAGES . " (page_key,language_key,main_page,page_params,menu_key,display_on_menu,sort_order) VALUES 
-('googlemcde','BOX_CATALOG_QUICK_UPDATES','FILENAME_GOOGLEMCDE','','catalog','Y',101)");
+('catalogQuickUpdates','BOX_CATALOG_QUICK_UPDATES','FILENAME_QUICK_UPDATES','','catalog','Y',101)");
 $messageStack->add('Quick Updates erfolgreich installiert.', 'success');  
 }
