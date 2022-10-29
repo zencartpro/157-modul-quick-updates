@@ -1,0 +1,72 @@
+Quick Updates 2.2.0
+für Zen Cart 1.5.7 deutsch
+
+========================================================
+
+Was macht diese Erweiterung?
+
+Quick Updates ermöglicht die Bearbeitung und Aktualisierung von mehreren Artikeln gleichzeitig.
+Es listet Artikelmerkmale und Preise von Artikeln in einer Kategorie in einer Tabelle auf, dadurch können Sie viele Artikel auf einmal bearbeiten.
+Die zu bearbeitenden Artikel können nach Herstellern und Kategorien gefiltert werden.
+Bearbeitet werden können (je nach Einstellung in der Konfiguration):
+Artikelnummer
+Name
+Status
+Gewicht
+Lagerbestand
+Hersteller
+Steuerklasse
+Nettopreis
+Bruttopreis
+Sortierung
+Artikelkategorie
+
+
+========================================================
+
+Changelog 2.2.0
+2022-10-29
+
+- Anpassungen für Zen Cart 1.5.7 deutsch und PHP 8
+- Veraltete und unnötige Funktionen entfernt, die in der normalen Administration ohnehin komfortabler zur Verfügung stehen
+- Installation auf Standard Autoinstaller umgestellt
+
+========================================================
+
+INSTALLATION:
+
+Es werden keine Dateien überschrieben.
+Allerdings wird die Datenbank verändert, daher sollten Sie VOR DER INSTALLATION ein Datenbankbackup durchführen!
+
+WICHTIG:
+
+Falls Sie bereits eine ältere Version von Quick Updates verwendet haben (z.B. in Ihrem alten 1.5.6 Shop, den Sie nun auf 1.5.7 aktualisiert haben), entfernen Sie die alte Version komplett, bevor Sie Quick Updates 2.2.0 installieren.
+Um die Datenbankeinträge der alten Version zu entfernen, öffnen Sie die uninstall.sql im Ordner UNINSTALL mit einem Texteditor und kopieren den Inhalt ins Eingabefeld unter Tools > SQL Patches installieren und gehen auf absenden.
+Erst dann laden Sie die neue Version hoch!
+
+1. 
+Benennen Sie im Ordner NEUE DATEIEN den Ordner DEINADMIN auf den Namen Ihres Adminverzeichnisses um. Und laden Sie ihn dann in Ihr Shopverzeichnis hoch.
+Dadurch werden keine bestehenden Dateien überschrieben
+
+2. 
+Klicken Sie nun im Adminbereich auf irgendeinen Menüpunkt, dadurch ist nun unter Webshop ein neuer Menüpunkt Quick Updates vorhanden und unter Konfiguration ein neuer Menüpunkt Quick Updates.
+
+3.
+Stellen Sie nun Konfiguration > Quick Updates ein, welche Artikelmerkmale zur Bearbeitung angezeigt werden sollen.
+
+4.
+Unter Webshop > Quick Updates rufen Sie nun die gewünschte Kategorie auf und können Massenänderungen ihrer gewünschten Merkmale vornehmen.
+Empfohlen wird, vor solchen Massenänderungen immer zuerst die Datenbank zu sichern.
+
+
+========================================================
+
+DEINSTALLATION
+
+1)
+Alle von diesem Modul neu hinzugefügten Dateien vom Server löschen
+
+2)
+Die uninstall.sql im Ordner UNINSTALL mit einem Texteditor öffnen und den Inhalt kopieren ins Eingabefeld unter Tools > SQL Patches installieren und absenden.
+
+
