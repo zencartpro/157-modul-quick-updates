@@ -7,7 +7,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: quick_updates.php 2022-10-29 10:59:04 webchills $
+ * @version $Id: quick_updates.php 2022-11-25 14:01:04 webchills $
  */
 require('includes/application_top.php');
 
@@ -36,7 +36,7 @@ function zen_quickupdates_table_head($sort_field, $head_text, $cols=1) {
 ////
 // This module changes the $_POST array! (moves import data to $_POST['quick_updates_new'])
 
-
+$_SESSION['quick_updates']['products_status'] ='';
 if (isset($_GET['products_status'])){
 /// do not convert to int here! (conversion is done later anyway)
 $_SESSION['quick_updates']['products_status'] = zen_db_prepare_input($_GET['products_status']);
@@ -330,8 +330,8 @@ case 'calcul' :
                           LEFT JOIN " . TABLE_MANUFACTURERS . " m ON (p.manufacturers_id = m.manufacturers_id)                          
                           LEFT JOIN " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c ON (p.products_id = p2c.products_id)";
 
-  $where = array();
-  if(is_numeric($_SESSION['quick_updates']['products_status'])){
+  $where = array();  
+  if ((isset($_SESSION['quick_updates']['products_status'])) && (is_numeric($_SESSION['quick_updates']['products_status']))){
     $where[] = "p.products_status = '" . (int)$_SESSION['quick_updates']['products_status'] . "'";
   }
   if ($current_category_id > 0){
