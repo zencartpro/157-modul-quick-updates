@@ -3,11 +3,11 @@
  * @package Quick Updates
  * @copyright Portions Copyright 2006 Paul Mathot http://www.beterelektro.nl/zen-cart
  * @copyright Copyright 2006 Andrew Berezin andrew@eCommerce-service.com
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Copyright 2003-2023 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: quick_updates.php 2022-11-25 14:01:04 webchills $
+ * @version $Id: quick_updates.php 2023-12-06 19:41:04 webchills $
  */
 require('includes/application_top.php');
 
@@ -138,16 +138,7 @@ $quick_updates_category_tree = zen_get_category_tree_quickupdates();
 
 switch (isset($_GET['action']) ? $_GET['action'] : '') {
   case 'update' :
-    // bof prepare al new data for database input
     
-    if(sizeof($_POST['quick_updates_new']) > 0){
-      foreach($_POST['quick_updates_new'] as $key => $value){
-       
-        $_POST['quick_updates_new'][$key] = zen_db_prepare_input($value);
-      }
-    }
-    // eof prepare al new data for database input
-
     $quick_updates_count = array();
     if(isset($_POST['quick_updates_new']['products_model'])){
         foreach($_POST['quick_updates_new']['products_model'] as $products_id => $new_value) {
