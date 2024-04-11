@@ -1,5 +1,5 @@
-Quick Updates 2.2.0
-für Zen Cart 1.5.7 deutsch
+Quick Updates 2.2.1
+für Zen Cart 1.5.7h deutsch
 
 ========================================================
 
@@ -21,6 +21,12 @@ Bruttopreis
 Sortierung
 Artikelkategorie
 
+========================================================
+
+Changelog 2.2.1
+2024-04-11
+
+- Anpassungen für Zen Cart 1.5.7h deutsch und PHP 8.2
 
 ========================================================
 
@@ -40,7 +46,7 @@ Allerdings wird die Datenbank verändert, daher sollten Sie VOR DER INSTALLATION
 
 WICHTIG:
 
-Falls Sie bereits eine ältere Version von Quick Updates verwendet haben (z.B. in Ihrem alten 1.5.6 Shop, den Sie nun auf 1.5.7 aktualisiert haben), entfernen Sie die alte Version komplett, bevor Sie Quick Updates 2.2.0 installieren.
+Falls Sie bereits eine ältere Version von Quick Updates verwendet haben (z.B. in Ihrem alten 1.5.6 Shop, den Sie nun auf 1.5.7h aktualisiert haben), entfernen Sie die alte Version komplett, bevor Sie Quick Updates 2.2.0 installieren.
 Um die Datenbankeinträge der alten Version zu entfernen, öffnen Sie die uninstall.sql im Ordner UNINSTALL mit einem Texteditor und kopieren den Inhalt ins Eingabefeld unter Tools > SQL Patches installieren und gehen auf absenden.
 Erst dann laden Sie die neue Version hoch!
 

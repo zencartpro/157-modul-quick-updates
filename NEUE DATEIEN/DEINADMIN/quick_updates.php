@@ -3,11 +3,11 @@
  * @package Quick Updates
  * @copyright Portions Copyright 2006 Paul Mathot http://www.beterelektro.nl/zen-cart
  * @copyright Copyright 2006 Andrew Berezin andrew@eCommerce-service.com
- * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: quick_updates.php 2023-12-06 19:41:04 webchills $
+ * @version $Id: quick_updates.php 2024-04-11 06:41:04 webchills $
  */
 require('includes/application_top.php');
 
@@ -344,16 +344,12 @@ case 'calcul' :
 // eof get products data from db
 
 // Let's start displaying page with forms
-?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+?>
+<!doctype html>
 <html <?php echo HTML_PARAMS; ?>>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<title><?php echo TITLE; ?></title>
-<link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
-<link rel="stylesheet" type="text/css" href="includes/cssjsmenuhover.css" media="all" id="hoverJS">
+<?php require DIR_WS_INCLUDES . 'admin_html_head.php'; ?>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet_quick_updates.css">
-<script language="javascript" src="includes/menu.js"></script>
-<script language="javascript" src="includes/general.js"></script>
 <script language="javascript" src="includes/javascript/quick_updates_price_calculations.js"></script>
 <script type="text/javascript">
 <!--
