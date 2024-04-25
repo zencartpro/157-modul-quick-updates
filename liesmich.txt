@@ -1,4 +1,4 @@
-Quick Updates 2.2.1
+Quick Updates 2.2.2
 für Zen Cart 1.5.7h deutsch
 
 ========================================================
@@ -20,6 +20,13 @@ Nettopreis
 Bruttopreis
 Sortierung
 Artikelkategorie
+
+========================================================
+
+Changelog 2.2.2
+2024-04-25
+
+- Kategoriefilter auf Top erweitert, um alle Artikel aus allen Kategorien anzeigen zu können
 
 ========================================================
 

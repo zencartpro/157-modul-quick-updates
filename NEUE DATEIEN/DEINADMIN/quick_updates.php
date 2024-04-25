@@ -42,7 +42,7 @@ if (isset($_GET['products_status'])){
 $_SESSION['quick_updates']['products_status'] = zen_db_prepare_input($_GET['products_status']);
 }
 
-$current_category_id = 1;
+$current_category_id = 0;
 if (isset($_GET['cPath'])){
   $_SESSION['quick_updates']['cPath'] = (int)$_GET['cPath'];
 }
